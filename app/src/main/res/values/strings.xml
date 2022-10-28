@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Sfera edu</string>
+    <string name="profile_owner_name">Profile Owner Name</string>
+    <string name="profile_owner_id">ID 123 456 789</string>
+    <string name="profile_avatar_rating">4.7</string>
+    <string name="owner_languages">Russian, English, German</string>
+    <string name="owner_geo">New York city, USA</string>
+    <string name="choose">Choose</string>
+    <string name="questionnaires">questionnaires</string>
+    <string name="people">people</string>
+    <string name="about_me">About me</string>
+    <string name="something_interesting_about_me_nin_two_lines">Something interesting about me \nin two lines</string>
+    <string name="dream_and_get">Dream and get</string>
+    <string name="wishes">wishes</string>
+    <string name="moments">Moments</string>
+    <string name="chronicles">Chronicles</string>
+</resources>
