@@ -6,13 +6,14 @@
     android:layout_height="wrap_content"
     android:padding="2dp">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintDimensionRatio="79:105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/main_avatar"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/RoundedCorner"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

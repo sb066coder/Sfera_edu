@@ -165,44 +165,44 @@
                 app:spanCount="4"
                 android:orientation="vertical"/>
 
-            <LinearLayout
-                android:id="@+id/btn_group"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/btn_questionnaires"
+                style="@style/button"
+                app:shapeAppearanceOverlay="@style/RoundedCorner"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/rv_profile_photos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_people"
+                android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="@string/questionnaires"
+                />
+
+                <Button
+                android:id="@+id/btn_people"
+                style="@style/button"
+                app:shapeAppearanceOverlay="@style/RoundedCorner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/rv_profile_photos"
+                app:layout_constraintStart_toEndOf="@id/btn_questionnaires"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="4dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginTop="14dp"
-                android:orientation="horizontal"
-                >
-
-                <Button
-                    android:id="@+id/btn_questionnaires"
-                    style="@style/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="4dp"
-                    android:layout_weight="1"
-                    android:text="@string/questionnaires" />
-
-                <Button
-                    android:id="@+id/btn_people"
-                    style="@style/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:layout_weight="1"
-                    android:text="@string/people"
-                    />
-
-            </LinearLayout>
+                android:layout_weight="1"
+                android:text="@string/people"
+                />
 
             <TextView
                 android:id="@+id/tv_about_me"
                 style="@style/caption"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                app:layout_constraintTop_toBottomOf="@id/btn_group"
+                app:layout_constraintTop_toBottomOf="@id/btn_questionnaires"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
@@ -252,6 +252,7 @@
             <Button
                 android:id="@+id/btn_wishes"
                 style="@style/button"
+                app:shapeAppearanceOverlay="@style/RoundedCorner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -279,7 +280,6 @@
                 android:layout_height="140dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="16dp"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintTop_toBottomOf="@id/tv_moments"
