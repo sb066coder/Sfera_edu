@@ -228,6 +228,7 @@
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
                     android:paddingTop="0dp"
+                    android:maxLength="300"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
