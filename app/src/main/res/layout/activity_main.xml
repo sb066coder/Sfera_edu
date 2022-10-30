@@ -283,7 +283,7 @@
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintTop_toBottomOf="@id/tv_moments"
-                tools:listitem="@layout/moments_photo_layout" />
+                tools:listitem="@layout/moments_item_layout" />
 
             <TextView
                 android:id="@+id/tv_chronicles"
