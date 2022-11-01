@@ -10,12 +10,6 @@ import ru.sb066coder.sferaedu.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        binding.rvProfilePhotos.adapter = ProfilePhotoAdapter()
-        binding.rvMoments.adapter = MomentsPhotoAdapter()
-        binding.rvChronicles.adapter = ChroniclesPhotoAdapter()
-
+        setContentView(R.layout.activity_main)
     }
 }

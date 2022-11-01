@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/profileOwnerFragment">
+
+    <fragment
+        android:id="@+id/profileOwnerFragment"
+        android:name="ru.sb066coder.sferaedu.view.ProfileOwnerFragment"
+        android:label="profile_owner_fragment"
+        tools:layout="@layout/profile_owner_fragment" >
+        <action
+            android:id="@+id/action_profileOwnerFragment_to_peopleFragment"
+            app:destination="@id/peopleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peopleFragment"
+        android:name="ru.sb066coder.sferaedu.view.PeopleFragment"
+        android:label="PeopleFragment"
+        tools:layout="@layout/people_fragment" />
+</navigation>
