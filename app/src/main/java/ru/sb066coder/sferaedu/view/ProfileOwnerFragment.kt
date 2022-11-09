@@ -21,6 +21,7 @@ class ProfileOwnerFragment : Fragment(R.layout.profile_owner_fragment) {
         binding.rvProfilePhotos.adapter = ProfilePhotoAdapter()
         binding.rvMoments.adapter = MomentsPhotoAdapter()
         binding.rvChronicles.adapter = ChroniclesPhotoAdapter()
+        binding.rvChronicles.suppressLayout(true)
 
         binding.btnPeople.setOnClickListener {
             findNavController().navigate(R.id.action_profileOwnerFragment_to_peopleFragment)

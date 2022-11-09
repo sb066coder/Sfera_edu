@@ -14,4 +14,7 @@
     <string name="wishes">wishes</string>
     <string name="moments">Moments</string>
     <string name="chronicles">Chronicles</string>
+    <string name="search">Search</string>
+    <string name="unsubscribe">Unsubscribe</string>
+    <string name="subscribe">Subscribe</string>
 </resources>
